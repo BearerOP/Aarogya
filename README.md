@@ -2,127 +2,92 @@
 
 # Aarogya
 
-Aarogya is a Health Management Information System (HMIS) application that provides schematic data of patients from various health welfare complexes.
+A HMIS application that provides schematic data of patients from various health welfare complexes.
 
 ## Installation and Setup
 
+Follow these steps to get your development environment set up:
+
 ### Prerequisites
 
-Make sure you have the following installed:
-- [Node.js](https://nodejs.org/) (>=14.x.x)
+- [Node.js](https://nodejs.org/) (v14 or higher)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
-### Getting Started
+### Clone the Repository
 
-1. **Clone the Repository**
+First, clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/BearerOP/Aarogya.git
-   cd Aarogya
-   ```
+```bash
+git clone https://github.com/BearerOP/Aarogya.git
+cd Aarogya
+```
 
-2. **Install Dependencies**
+### Install Dependencies
 
-   ```bash
-   npm install
-   ```
+Install the required dependencies using npm:
 
-3. **Create a `.env` File**
+```bash
+npm install
+```
 
-   Create a `.env` file in the root of your project and add the necessary environment variables. Example:
+### Generate an OpenSSL Secret
 
-   ```env
-   MONGO_URI=mongodb://localhost:27017/aarogya
-   ```
+To generate a secret key using OpenSSL for your application, run the following command:
 
-4. **Run the Application**
+```bash
+openssl rand -base64 32
+```
 
-   To start the application in development mode, use:
+This will output a 32-byte base64-encoded secret. You can use this secret in your application configuration.
 
-   ```bash
-   npm start
-   ```
+### Create a `.env` File
 
-   This will use `nodemon` to automatically restart the server on code changes.
+Create a `.env` file in the root directory of the project and add the following content:
 
-### Linting and Formatting
+```env
+SECRET_KEY=<your_generated_secret>
+```
 
-- **Lint the Code**
+Replace `<your_generated_secret>` with the secret key you generated with OpenSSL.
 
-  Run the following command to check for linting issues:
+### Running the Application
 
-  ```bash
-  npm run lint
-  ```
+To start the application in development mode, run:
 
-  To get a summary of linting results, use:
+```bash
+npm start
+```
 
-  ```bash
-  npm run lint:check
-  ```
+### Running Linting and Formatting
 
-- **Format the Code**
+To lint your code, run:
 
-  To format the code using Prettier, run:
+```bash
+npm run lint
+```
 
-  ```bash
-  npm run prettier
-  ```
+To check for lint errors and see a message if no errors are found, use:
 
-## Contribution
+```bash
+npm run lint:check
+```
 
-We welcome contributions to Aarogya! Here’s how you can contribute:
+To format your code with Prettier, run:
 
-1. **Fork the Repository**
+```bash
+npm run prettier
+```
 
-   Click the "Fork" button on the top right of the repository page on GitHub to create a personal copy of the repository.
+## Contributing
 
-2. **Clone Your Fork**
-
-   ```bash
-   git clone https://github.com/your-username/Aarogya.git
-   cd Aarogya
-   ```
-
-3. **Create a Branch**
-
-   Create a new branch for your changes:
-
-   ```bash
-   git checkout -b your-feature-branch
-   ```
-
-4. **Make Your Changes**
-
-   Make the necessary changes to the codebase.
-
-5. **Commit Your Changes**
-
-   Commit your changes with a descriptive message:
-
-   ```bash
-   git add .
-   git commit -m "Add your descriptive commit message here"
-   ```
-
-6. **Push to Your Fork**
-
-   Push your changes to your forked repository:
-
-   ```bash
-   git push origin your-feature-branch
-   ```
-
-7. **Open a Pull Request**
-
-   Go to the original repository on GitHub and open a pull request from your forked repository’s branch.
+We welcome contributions to Aarogya! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
 
 ## License
 
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [ISC License](LICENSE).
 
 ## Contact
 
-For any questions or issues, please open an issue on the [GitHub repository](https://github.com/BearerOP/Aarogya/issues).
+For any questions or issues, please open an issue on our [GitHub repository](https://github.com/BearerOP/Aarogya/issues).
 
 ---
