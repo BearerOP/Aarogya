@@ -1,5 +1,3 @@
-Here's a `CONTRIBUTING.md` file that you can add to your repository:
-
 ---
 
 # Contributing to Aarogya
@@ -90,5 +88,3 @@ Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) when contributing. We
 Thank you for contributing to Aarogya! Your efforts help us make the project better.
 
 ---
-
-Feel free to adjust the content based on your project's specifics or any additional guidelines you want to include.
