@@ -2,13 +2,11 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const { connectDB } = require('./db/dbConnection');
+dotenv.config();
 
 app.get('/', (req, res) => {
-  res.send('Aarogya Backend is up.');
+  res.send('Aarogya Backend is up. 😊');
 });
-
-console.log('Hello, world!');
-dotenv.config();
 
 connectDB();
 
