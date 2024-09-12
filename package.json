@@ -1,0 +1,39 @@
+{
+  "name": "aarogya",
+  "version": "1.0.0",
+  "description": "A HMIS application that provides schematic data of patients from various health welfare complexes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon",
+    "lint": "eslint .",
+    "lint:check": "eslint . && echo 'No errors found' || echo 'Lint errors found'",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BearerOP/Aarogya.git"
+  },
+  "author": "BearerOP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BearerOP/Aarogya/issues"
+  },
+  "homepage": "https://github.com/BearerOP/Aarogya#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.8.1",
+    "mongoose": "^8.6.2",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3"
+  }
+}
