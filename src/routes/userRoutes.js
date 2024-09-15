@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 
 const {
@@ -6,14 +6,14 @@ const {
   register,
   logout,
   profile,
-} = require('../controllers/userController')
+} = require('../controllers/userController');
 
-router.post("/register", register);
+router.post('/register', register);
 
-router.post("/login", login);
+router.post('/login', login);
 
-router.post("/logout", logout);
+router.post('/logout', logout);
 
-router.get("/profile", profile);
+router.get('/profile', profile);
 
 module.exports = router;

@@ -3,7 +3,7 @@ const {
   register,
   logout,
   profile,
-} = require('../services/userServices')
+} = require('../services/userServices');
 
 exports.login = async (req, res) => {
   try {
@@ -55,4 +55,3 @@ exports.profile = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
-
